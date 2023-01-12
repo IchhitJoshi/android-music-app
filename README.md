@@ -1,7 +1,7 @@
 # Custom Android Music Player App (Work In Progress)
 
 ## Features :
-- Built using Java
+- Built using Java and Android Studio
 - Displays and plays audio files stored on the user's phone
 - Firebase user authentication with email (Login, Register, Forgot Password)
 - Track playback and control using MediaPlayer API
