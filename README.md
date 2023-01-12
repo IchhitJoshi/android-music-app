@@ -10,6 +10,7 @@
 - Foreground service for showing playback in notification view
 - Albums and songs listing using recyclerview
 - Album art display using Glide
+- Dark and Light Display Mode
 
 ## Screenshots:
 ![Screenshot_20210119-221934_Music_Original](https://user-images.githubusercontent.com/112485986/212205081-43d66ebc-525d-485d-bc02-cb4e311829f2.jpg)
