@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/album_menu_1"
+        android:title="Play" />
+
+    <item
+        android:id="@+id/album_menu_2"
+        android:title="Play Next" />
+
+    <item
+        android:id="@+id/album_menu_3"
+        android:title="Add to..." >
+
+        <menu>
+            <item android:id="@+id/album_menu_addToPlaylist"
+                android:title="Playlist...">
+
+                <menu>
+                    <item android:id="@+id/album_menu_newPlaylist"
+                        android:title="New Playlist"/>
+
+                    <item android:id="@+id/album_menu_Favorites"
+                        android:title="Favorites"/>
+
+                </menu>
+
+
+            </item>
+
+            <item android:id="@+id/album_menu_addToQueue"
+                android:title="Queue"/>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/album_menu_4"
+        android:title="Edit Album Info" />
+
+    <item
+        android:id="@+id/album_menu_5"
+        android:title="Go to Artist" />
+
+    <item
+        android:id="@+id/album_menu_6"
+        android:title="Choose Artwork" />
+
+    <item
+        android:id="@+id/album_menu_7"
+        android:title="Delete" />
+
+</menu>

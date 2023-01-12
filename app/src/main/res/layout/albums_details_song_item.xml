@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    app:cardBackgroundColor="@color/background"
+    app:cardPreventCornerOverlap="false"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/albums_details_smallArt"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:scaleType="centerCrop"
+                android:background="@color/background"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/albums_details_track_number"
+                android:layout_width="25dp"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/secondaryTextColor"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:fontFamily="@font/manrope_semibold"
+                android:text="10"
+                android:maxLines="1"
+                android:visibility="visible"
+                android:layout_marginLeft="2dp"
+                android:layout_marginEnd="5dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:id="@+id/albums_details_song"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:lines="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/mainTextColor"
+                    android:layout_height="0dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:text="Song Name"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/albums_details_artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-5dp"
+                    android:lines="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/secondaryTextColor"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:text="Artist Name"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/albums_details_song_duration"
+            android:textColor="@color/secondaryTextColor"
+            android:layout_width="wrap_content"
+            android:lines="1"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:fontFamily="@font/manrope_semibold"
+            android:text="1:20:23"
+            android:maxLines="1"/>
+
+
+        <TextView
+            android:id="@+id/albums_details_textViewOptions"
+            android:layout_width="40dp"
+            android:layout_marginRight="-10dp"
+            android:layout_height="match_parent"
+            android:text="&#8942;"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/secondaryTextColor"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/manrope_bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

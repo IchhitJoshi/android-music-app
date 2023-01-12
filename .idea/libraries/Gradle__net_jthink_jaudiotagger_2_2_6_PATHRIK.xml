@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.jthink:jaudiotagger:2.2.6-PATHRIK">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jthink/jaudiotagger/2.2.6-PATHRIK/8ea08675d1c5a42e058418f7fb9033ed33b2ac0c/jaudiotagger-2.2.6-PATHRIK.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jthink/jaudiotagger/2.2.6-PATHRIK/e5ed8a7aa67a4c79515ddc936d93dba348113343/jaudiotagger-2.2.6-PATHRIK-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jthink/jaudiotagger/2.2.6-PATHRIK/75eb3e9445dae54b29e4ade759a70218a460332d/jaudiotagger-2.2.6-PATHRIK-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

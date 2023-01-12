@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A6B6</color>
+    <color name="colorPrimaryDark">#005e66</color>
+    <color name="colorAccent">#00A6B6</color>
+
+    <color name="statusBarColorDark">#004B52</color>
+
+
+    <color name="mainTextColor">#EFEFEF</color>
+    <color name="secondaryTextColor">#999999</color>
+
+    <color name="miniPlayerBackground">#121212</color>
+
+
+    <color name="hint_color_active">#00A6B6</color>
+    <color name="hint_color_inactive">#606060</color>
+    <color name="button_disable">#A9A9A9</color>
+    <color name="background">#000000</color>
+</resources>

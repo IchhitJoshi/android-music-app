@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "575807570973",
+    "firebase_url": "https://music-1d8fe.firebaseio.com",
+    "project_id": "music-1d8fe",
+    "storage_bucket": "music-1d8fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575807570973:android:65d23566f5baf8b8bf72f4",
+        "android_client_info": {
+          "package_name": "com.example.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575807570973-ffv8kt3hr6huai0v2u0ek8lijniqvd35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1eTAqlq4orn1GZPCexRbzmcTrNr6l010"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575807570973-ffv8kt3hr6huai0v2u0ek8lijniqvd35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575807570973:android:42475195260e9a1dbf72f4",
+        "android_client_info": {
+          "package_name": "com.example.music123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575807570973-88ggff8cnp80aiitqlfc5t746dpubfju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.music123",
+            "certificate_hash": "41195477f7c5c61b8005d7518d706afef354ae1a"
+          }
+        },
+        {
+          "client_id": "575807570973-ffv8kt3hr6huai0v2u0ek8lijniqvd35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1eTAqlq4orn1GZPCexRbzmcTrNr6l010"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575807570973-ffv8kt3hr6huai0v2u0ek8lijniqvd35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

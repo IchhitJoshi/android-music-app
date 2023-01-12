@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/player_item1"
+        android:title="Go to..." >
+
+        <menu>
+            <item android:id="@+id/goToArtist"
+                android:title="Artist"/>
+
+            <item android:id="@+id/goToAlbum"
+                android:title="Album"/>
+
+            <item android:id="@+id/goToGenre"
+                android:title="Genre"/>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/player_item2"
+        android:title="Song Info" />
+
+    <item
+        android:id="@+id/player_item3"
+        android:title="Edit Song Info" />
+
+
+    <item
+        android:id="@+id/player_item6"
+        android:title="Add to Playlist" />
+
+    <item
+        android:id="@+id/player_item7"
+        android:title="Sleep Timer" />
+
+    <item
+        android:id="@+id/player_item8"
+        android:title="Lyrics" />
+
+    <item
+        android:id="@+id/player_item9"
+        android:title="Delete" />
+</menu>

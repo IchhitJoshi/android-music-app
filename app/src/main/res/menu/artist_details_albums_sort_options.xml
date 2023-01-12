@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/artist_details_albums_sort_item1"
+            android:checked="true"
+            android:title="Name" />
+        <item
+            android:id="@+id/artist_details_albums_sort_item2"
+
+            android:title="Album Year" />
+        <item
+            android:id="@+id/artist_details_albums_sort_item3"
+
+            android:title="Album Duration" />
+
+        <item
+            android:id="@+id/artist_details_albums_sort_item4"
+
+            android:title="Number of Tracks" />
+
+        <item
+            android:id="@+id/artist_details_albums_sort_item5"
+
+            android:title="Date Added" />
+
+
+    </group>
+
+    <item
+        android:id="@+id/artist_details_albums_sort_item6"
+        android:title="Ascending"
+        android:checkable="true"/>
+</menu>

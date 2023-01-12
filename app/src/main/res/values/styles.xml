@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+
+    </style>
+
+    <style name="HintTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="AlbumTextAppearance" parent="android:TextAppearance.Large">
+        <item name="android:fontFamily">@font/manrope_semibold</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/mainTextColor</item>
+    </style>
+
+    <style name="AlbumExpandedSubtitleTextAppearance" parent="android:TextAppearance.Large">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:fontFamily">@font/manrope_bold</item>
+    </style>
+
+    <style name="ToolbarTextAppearance" parent="android:TextAppearance.Material.Medium">
+        <item name="android:fontFamily">@font/manrope_extrabold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="QueueToolbarTextAppearance" parent="android:TextAppearance.Large">
+        <item name="android:fontFamily">@font/manrope_semibold</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+
+    <style name="AlbumDetailsToolbarTextAppearance" parent="android:TextAppearance.Material.Medium">
+        <item name="android:fontFamily">@font/manrope_bold</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="QueueToolbarSubtitleTextAppearance" parent="android:TextAppearance.Material.Medium">
+        <item name="android:fontFamily">@font/manrope_regular</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="BottomNavigationActiveTextAppearance" parent="Theme.AppCompat.DayNight">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+    </style>
+
+    <style name="BottomNavigationInactiveTextAppearance" parent="Theme.AppCompat.DayNight">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+    </style>
+
+
+
+</resources>

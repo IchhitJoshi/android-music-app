@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/queue_row_item1"
+        android:title="Play Next" />
+
+    <item
+        android:id="@+id/queue_row_item2"
+        android:title="Add to..." >
+
+        <menu>
+            <item android:id="@+id/queue_row_addToPlaylist"
+                android:title="Playlist...">
+
+                <menu>
+                    <item android:id="@+id/queue_row_newPlaylist"
+                        android:title="New Playlist"/>
+
+                    <item android:id="@+id/queue_row_Favorites"
+                        android:title="Favorites"/>
+
+                </menu>
+
+
+            </item>
+
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/queue_row_item3"
+        android:title="Edit Song Info" />
+
+    <item
+        android:id="@+id/queue_row_item4"
+        android:title="Song Info" />
+
+    <item
+        android:id="@+id/queue_row_item5"
+        android:title="Go to..." >
+
+        <menu>
+            <item android:id="@+id/queue_row_GoToArtist"
+                android:title="Artist"/>
+
+            <item android:id="@+id/queue_row_GoToAlbum"
+                android:title="Album"/>
+
+            <item android:id="@+id/queue_row_GoToGenre"
+                android:title="Genre"/>
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/queue_row_item6"
+        android:title="Remove from Queue" />
+
+    <item
+        android:id="@+id/queue_row_item7"
+        android:title="Delete"/>
+</menu>

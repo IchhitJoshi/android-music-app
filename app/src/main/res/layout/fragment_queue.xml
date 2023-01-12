@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:clickable="true"
+        android:id="@+id/queueToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:subtitle="Artist Name"
+        app:subtitleTextAppearance="@style/QueueToolbarSubtitleTextAppearance"
+        app:title="Song Name"
+        app:titleTextAppearance="@style/QueueToolbarTextAppearance"
+        android:focusable="true">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+            android:id="@+id/queueRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="132dp"
+            android:background="@color/background"
+            app:fastScrollEnableThumbInactiveColor="true"
+            app:fastScrollThumbInactiveColor="@color/colorPrimary"
+            app:fastScrollPopupBgColor="@color/colorAccent"
+            app:fastScrollPopupTextColor="@android:color/primary_text_dark"
+            app:fastScrollThumbColor="@color/colorAccent"
+            app:fastScrollAutoHide="true"
+            app:fastScrollAutoHideDelay="1500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/queueSongProgressBar"
+            style="@android:style/Widget.Material.SeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:progressBackgroundTint="@color/secondaryTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/queueRecyclerView" />
+
+        <TextView
+            android:id="@+id/queueSongDurationPlayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="0:00"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/queueSongProgressBar" />
+
+        <TextView
+            android:id="@+id/queueSongDurationTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="5:54:00"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/queueSongProgressBar" />
+
+        <Button
+            android:id="@+id/queuePausePlayButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/play_button_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/queueSongProgressBar" />
+
+        <Button
+            android:id="@+id/queuePlayNextButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/next_button_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/queueRepeatButton"
+            app:layout_constraintStart_toEndOf="@+id/queuePausePlayButton"
+            app:layout_constraintTop_toBottomOf="@+id/queueSongProgressBar" />
+
+        <Button
+            android:id="@+id/queuePlayPrevButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/previous_button_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/queuePausePlayButton"
+            app:layout_constraintStart_toEndOf="@+id/queueSongShuffleButton"
+            app:layout_constraintTop_toBottomOf="@+id/queueSongProgressBar" />
+
+        <Button
+            android:id="@+id/queueSongShuffleButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shuffle_button_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/queueSongProgressBar" />
+
+        <Button
+            android:id="@+id/queueRepeatButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/repeat_button_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/queueSongProgressBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

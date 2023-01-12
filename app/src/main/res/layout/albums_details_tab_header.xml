@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:cardBackgroundColor="@color/background"
+    app:cardPreventCornerOverlap="false"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/outline_audiotrack_black_24dp"
+
+                >
+
+
+
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/albums_details_album_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:text="20 • 2010 • 22:06:18 "
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope_semibold"
+                android:maxLines="1"
+                android:textColor="@color/mainTextColor"
+                android:textSize="17dp"
+
+                >
+
+
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="-5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/albums_details_songs_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/song_adapter_sort_icon"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+               />
+
+
+            <ImageView
+                android:id="@+id/albums_details_songs_header_shuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shuffle_all_songs_tab"
+                android:layout_marginStart="290dp"
+                android:layout_marginLeft="290dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp" />
+
+
+            <ImageView
+                android:id="@+id/albums_details_songs_header_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/play_all_songs_tab"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

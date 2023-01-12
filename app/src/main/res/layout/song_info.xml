@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="350dp"
+    android:layout_height="450dp"
+    android:layout_gravity="center"
+    android:background="@color/miniPlayerBackground">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Song Info"
+        android:textColor="@color/mainTextColor"
+        android:fontFamily="@font/manrope_bold"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/songInfoClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ic_close_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+       >
+
+        <TableLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Title"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_song_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Song Name"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Artist"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_artist_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Artist Name"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Album Artist"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_album_artist_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Artist Name"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Album"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_album_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Album Name"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Track #"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_track_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="1"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Duration"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="4:10"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Year"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="2010"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Disc"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_disc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="1"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Size"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_file_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="20 MB"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Bit Rate"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_bitrate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Sample Rate"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_samplerate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Format"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_format"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Song ID"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_songId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Artist ID"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_artistId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Album ID"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_albumId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/manrope_regular"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Path"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/info_path"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

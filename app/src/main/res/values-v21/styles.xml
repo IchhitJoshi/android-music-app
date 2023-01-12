@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavSelTextAppearance" parent="android:TextAppearance.Material.Small">
+        <item name="android:fontFamily">@font/manrope_regular</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="BottomNavInTextAppearance" parent="android:TextAppearance.Material.Small">
+        <item name="android:fontFamily">@font/manrope_regular</item>
+        <item name="android:textColor">#323E48</item>
+    </style>
+
+    <style name="ToolbarTextAppearance" parent="android:TextAppearance.Material.Medium">
+        <item name="android:fontFamily">@font/manrope_extrabold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+</resources>

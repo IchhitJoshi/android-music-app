@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/light_mode"
+            android:checked="true"
+            android:title="Light Mode" />
+        <item
+            android:id="@+id/dark_mode"
+            android:title="Dark Mode" />
+
+        <item
+            android:id="@+id/system_default"
+            android:title="System Default" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/round_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navSearch"
+        android:icon="@drawable/round_search_black_24dp"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/navMusic"
+        android:icon="@drawable/outline_audiotrack_black_24dp"
+        android:title="Music" />
+</menu>
